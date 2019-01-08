@@ -34,7 +34,7 @@ function sendEmails()
   
   for(var i=0; i<dates.length; i++)
   {
-    var hoursLeft = Math.abs(dates[i]-now)/36e5;
+    var hoursLeft = (dates[i]-now)/36e5;
     for(var j=0; j<attendants[i].length; j++)
     {
       var index = logins.indexOf(attendants[i][j]);     
